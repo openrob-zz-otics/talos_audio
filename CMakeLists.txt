@@ -3,7 +3,7 @@
 
 cmake_minimum_required(VERSION 2.8.3)
 project(talos_audio)
-find_package(catkin REQUIRED COMPONENTS message_generation rospy message_runtime)
+find_package(catkin REQUIRED COMPONENTS message_generation rospy roscpp std_msgs)
  catkin_python_setup()
 
 
@@ -14,7 +14,7 @@ add_service_files(
   ListenFor.srv
 )
 
-generate_messages()
+generate_messages(DEPENDENCIES std_msgs)
 
 catkin_package(
 CATKIN_DEPENDS message_runtime message_generation
