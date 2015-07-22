@@ -6,6 +6,10 @@ http://www.speech.cs.cmu.edu/tools/lmtool.html
 
 This package contains the speech commands that the Talos robot accepts as a ROS service.
 
+You must also install pocketsphinx and gstreamer0.10-conf.
+
+    sudo apt-get install pocketsphinx && gstreamer0.10-conf
+
 To launch the listener:
     roslaunch talos_audio listener.launch
 
