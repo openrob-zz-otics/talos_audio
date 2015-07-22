@@ -5,17 +5,14 @@
 ############################### IMPORTS ############################
 
 
-import roslib; roslib.load_manifest('talos_audio')
+import roslib
 import rospy
 import pyttsx
 
-from talos_audio.srv import ListenFor
-from talos_audio.srv import ListenForAll
-from talos_audio.srv import ListenForAny
+import talos_audio.srv
 from std_msgs.msg import String
 from std_srvs.srv import Empty, EmptyRequest
 from sound_play.libsoundplay import SoundClient
-
 
 ########################### DEVELOEPR README #######################
 
