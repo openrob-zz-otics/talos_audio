@@ -3,6 +3,6 @@
 
 <launch>
 
-<node pkg="talos_audio" name="talos_audio_node" type="talos_audio.py" output="screen"/>
+<node pkg="talos_audio" name="talos_audio_node" type="talosaudio.py" output="screen"/>
 
 </launch>
